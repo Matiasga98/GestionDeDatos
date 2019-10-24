@@ -44,11 +44,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbmCliente\Buscar Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\Buscar Cliente.Designer.cs">
+      <DependentUpon>Buscar Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\Modificar Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\Modificar Cliente.Designer.cs">
+      <DependentUpon>Modificar Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\Crear Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\Crear Cliente.Designer.cs">
+      <DependentUpon>Crear Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="AbmCliente\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AbmCliente\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmProveedor\Buscar Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmProveedor\Buscar Proveedor.Designer.cs">
+      <DependentUpon>Buscar Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmProveedor\Modificar Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmProveedor\Modificar Proveedor.Designer.cs">
+      <DependentUpon>Modificar Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmProveedor\Crear Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmProveedor\Crear Proveedor.Designer.cs">
+      <DependentUpon>Crear Proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="AbmProveedor\Form1.cs">
       <SubType>Form</SubType>
@@ -80,22 +116,34 @@
     <Compile Include="AbmRol\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ComprarOferta\Form1.cs">
+    <Compile Include="ComprarOferta\Buscar y comprar Oferta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ComprarOferta\Form1.Designer.cs">
+    <Compile Include="ComprarOferta\Buscar y comprar Oferta.Designer.cs">
+      <DependentUpon>Buscar y comprar Oferta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearOferta\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearOferta\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="CragaCredito\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CragaCredito\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CrearOferta\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CrearOferta\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Facturar\Form1.cs">
@@ -118,6 +166,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AbmCliente\Buscar Cliente.resx">
+      <DependentUpon>Buscar Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCliente\Modificar Cliente.resx">
+      <DependentUpon>Modificar Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCliente\Crear Cliente.resx">
+      <DependentUpon>Crear Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCliente\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\Buscar Proveedor.resx">
+      <DependentUpon>Buscar Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\Modificar Proveedor.resx">
+      <DependentUpon>Modificar Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\Crear Proveedor.resx">
+      <DependentUpon>Crear Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmProveedor\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AbmRol\Borrar Rol.resx">
       <DependentUpon>Borrar Rol.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +200,27 @@
       <DependentUpon>Crear Rol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AbmRol\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprarOferta\Buscar y comprar Oferta.resx">
+      <DependentUpon>Buscar y comprar Oferta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CragaCredito\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearOferta\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturar\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoEstadistico\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -152,6 +245,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
